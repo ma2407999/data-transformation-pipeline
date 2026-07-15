@@ -1,2 +1,1 @@
-# etl-data-cleaning
-ETL workflow and data cleaning using Excel and SQL Server
+End-to-end data transformation pipeline handling raw data, applying business rules and post-load integrity checks
