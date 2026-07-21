@@ -1,38 +1,29 @@
-# Data Transformation Pipeline
+# Financial KPI Analysis & Reporting Pipeline
 
 ## Overview
-An end-to-end data transformation pipeline that processes raw 
-semi-structured data, applies business rules, and prepares clean 
-datasets ready for SQL Server integration and reporting.
+An Excel-based financial analysis project transforming raw transactional 
+data into structured KPI reporting and business intelligence outputs.
 
 ## Problem Statement
-Raw incoming data contained inconsistencies, formatting issues, 
-and structural problems that prevented direct database insertion 
-and accurate reporting.
+Raw sales data required structured analysis to surface key business 
+metrics and performance trends for management decision-making.
 
 ## Tools Used
-- Microsoft Excel (transformation and business rule application)
-- SQL Server (destination database)
-- SQL (post-load validation and integrity checks)
+- Microsoft Excel (PivotTables, formulas, charts, conditional formatting)
 
-## Process
-1. Received and assessed raw semi-structured data
-2. Identified data quality issues including nulls, duplicates, 
-   formatting inconsistencies and structural mismatches
-3. Applied business transformation rules in Excel
-4. Standardized data types, formats and naming conventions
-5. Validated transformed data before database insertion
-6. Executed post-load SQL validation queries to confirm integrity
+## What Was Built
+- KPI Summary sheet tracking 7 business metrics against targets
+- Pivot analysis covering sales by Category, Region, Segment, and Month
+- Visual dashboard with 4 charts embedded in dedicated Charts sheet
+- Automated status flags using IF formulas and conditional formatting
 
-## Transformation Steps Applied
-- Null value handling and default value assignment
-- Duplicate record identification and removal
-- Date format standardization
-- Text field cleaning and trimming
-- Numeric field validation and correction
-- Column restructuring to match database schema
+## Key Excel Features Applied
+- SUMPRODUCT for distinct count calculations
+- Dynamic PivotTables linked to raw data source
+- Conditional formatting for visual KPI status indicators
+- IF-based automated target vs actual comparison logic
 
 ## Outcome
-Delivered clean, validated datasets ready for seamless SQL Server 
-integration, significantly improving data quality and reducing 
-post-load error rates in ETL workflows.
+Delivered a self-updating management report that tracks sales performance, 
+profit margins, and regional trends — ready for executive review without 
+manual recalculation.
